@@ -14,7 +14,16 @@ const port = process.env.PORT || 4000;
 
 //middleware
 app.use(express.json());
-app.use(cors())
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://food-delivery-three-cyan.vercel.app/",
+      "https://food-delivery-admin-sepia-five.vercel.app/",
+    ],
+    credentials: true,
+  })
+);
 
 config({
     path: "./.env",
@@ -38,5 +47,3 @@ app.listen(port,()=>{
     console.log(`server started on port: ${port}`)
 })
 
-// mongodb+srv://bhavyachavda55:<db_password>@cluster0.w1qve.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-// mongodb+srv://bhavyachavda55:gMYzZG2L69zYBC9V@cluster0.w1qve.mongodb.net/?
