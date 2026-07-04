@@ -81,10 +81,10 @@ Setup Environment Vaiables
 
 Setup the Frontend and Backend URL
    - App.jsx in Admin folder
-      const url = YOUR_BACKEND_URL
+      const url = [YOUR_BACKEND_URL](https://food-delivery-zt0y.onrender.com/)
      
   - StoreContext.js in Frontend folder
-      const url = YOUR_BACKEND_URL
+      const url =[ YOUR_BACKEND_URL](https://food-delivery-zt0y.onrender.com/)
 
   - orderController in Backend folder
       const frontend_url = YOUR_FRONTEND_URL 
